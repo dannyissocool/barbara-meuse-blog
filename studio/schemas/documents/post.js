@@ -64,6 +64,19 @@ export default {
       ],
     },
     {
+      name: "tags",
+      type: "array",
+      title: "Tags",
+      of: [
+        {
+          type: "reference",
+          to: {
+            type: "tags",
+          },
+        },
+      ],
+    },
+    {
       name: "body",
       type: "bodyPortableText",
       title: "Body",
